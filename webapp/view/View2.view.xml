@@ -1,0 +1,11 @@
+<mvc:View controllerName="oft.fiori.nov.controller.View2"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Page id="idView2" title="view2">
+    <content>
+
+    <Button id="idBtnv2" text="back" press="onBack"></Button>
+    
+    </content>
+    </Page>
+</mvc:View>

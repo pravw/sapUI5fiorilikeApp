@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+	<title>SAPUI5 learning</title>
+    <script
+	id="sap-ui-bootstrap"
+	src="https://openui5.hana.ondemand.com/resources/sap-ui-core.js"
+	data-sap-ui-theme="sap_belize"
+	data-sap-ui-xx-bindingSyntax="complex" 
+	data-sap-ui-libs="sap.m,sap.ui.layout,sap.ui.table  "
+	data-sap-ui-compatVersion="edge"
+	data-sap-ui-async="true"
+
+	data-sap-ui-resourceroots='{
+		"oft.fiori.nov": "./"
+	}'>
+
+</script>
+
+
+
+
+
+<script>
+ sap.ui.getCore().attachInit(function () {
+
+
+// var oPraveen = new sap.ui.view({
+//     id:"idMyXml",
+//      viewName:  "oft.fiori.nov.view.App",
+//      type:"XML"
+
+// });
+
+
+
+var oPraveen = new sap.ui.view("idMyXml",{
+     viewName:"oft.fiori.nov.view.App",
+     type:sap.ui.core.mvc.ViewType.XML
+});
+
+
+var oView1 = new sap.ui.view("idView1",{
+viewName:"oft.fiori.nov.view.View1",
+type:sap.ui.core.mvc.ViewType.XML
+
+});
+
+var oView2 = new sap.ui.view("idView2",{
+viewName:"oft.fiori.nov.view.View2",
+type:sap.ui.core.mvc.ViewType.XML
+
+});
+
+var oApp = oPraveen.byId("idApp");
+oApp.addPage(oView1).addPage(oView2);
+
+oPraveen.placeAt("content");
+
+}); 
+</script>
+
+
+</head>
+<body>
+	<body class="sapUiBody" id="content">
+    </body>
+</html>
+
+<!-- ------------------------------------------------------------------------------------------------- -->
+<!-- 
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>SAPUI5 Learning</title>
+    <script
+        id="sap-ui-bootstrap"
+        src="https://openui5.hana.ondemand.com/resources/sap-ui-core.js"
+        data-sap-ui-theme="sap_belize"
+        data-sap-ui-xx-bindingSyntax="complex" 
+        data-sap-ui-libs="sap.m,sap.ui.layout,sap.ui.table"
+        data-sap-ui-compatVersion="edge"
+        data-sap-ui-async="true"
+        data-sap-ui-resourceroots='{
+            "oft.fiori.nov": "./"
+        }'>
+    </script>
+</head>
+<body class="sapUiBody" id="content">
+    <script>
+        sap.ui.getCore().attachInit(function () {
+            // Create the application
+            var oApp = new sap.m.App("idApp");
+
+            // Create views
+            var oView1 = new sap.ui.core.mvc.XMLView({
+                id: "pageView1",
+                viewName: "oft.fiori.nov.view.View1"
+            });
+
+            var oView2 = new sap.ui.core.mvc.XMLView({
+                id: "pageView2",
+                viewName: "oft.fiori.nov.view.View2"
+            });
+
+            // Add views to the app
+            oApp.addPage(oView1).addPage(oView2);
+
+            // Place the app in the content area
+            oApp.placeAt("content");
+        });
+    </script>
+</body>
+</html> -->

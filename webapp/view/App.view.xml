@@ -1,0 +1,7 @@
+<mvc:View controllerName="oft.fiori.nov.controller.App"
+    displayBlock="true"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <App id="idApp">
+    </App>
+</mvc:View>
