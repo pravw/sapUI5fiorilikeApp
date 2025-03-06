@@ -1,9 +1,10 @@
 sap.ui.define([
-    "sap/ui/core/mvc/Controller"
-], (Controller) => {
+    
+    "oft/fiori/nov/controller/BaseController"
+], function(BaseController) {
     "use strict";
 
-    return Controller.extend("oft.fiori.nov.controller.View2", {
+    return BaseController.extend("oft.fiori.nov.controller.View2", {
         onInit() {
         },
 

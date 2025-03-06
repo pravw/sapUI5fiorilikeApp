@@ -2,19 +2,17 @@ sap.ui.define([
     "sap/ui/model/json/JSONModel",
     "sap/ui/Device"
 ], 
-function (JSONModel, Device) {
+function (JSONModel, ) {
     "use strict";
 
     return {
-        /**
-         * Provides runtime information for the device the UI5 app is running on as a JSONModel.
-         * @returns {sap.ui.model.json.JSONModel} The device model.
-         */
-        createDeviceModel: function () {
-            var oModel = new JSONModel(Device);
-            oModel.setDefaultBindingMode("OneWay");
+      
+        createFruitModel: function () {
+            var oModel = new JSONModel();
+            oModel.loadData("model/mockData/fruits.json");
             return oModel;
         }
     };
 
 });
+

@@ -1,0 +1,38 @@
+{
+  "fruits": [
+    {"name": "Apple", "image": "https://media.istockphoto.com/id/184276818/photo/red-apple.jpg?s=612x612&w=0&k=20&c=NvO-bLsG0DJ_7Ii8SSVoKLurzjmV0Qi4eGfn6nW3l5w=" , "healthBenefit": "Rich in fiber", "color": "Red", "price": 2, "currency": "USD", "type": "Fresh"},
+    {"name": "Banana", "image": "https://media.istockphoto.com/id/1184345169/photo/banana.jpg?s=612x612&w=0&k=20&c=NdHyi6Jd9y1855Q5mLO2tV_ZRnaJGtZGCSMMT7oxdF4=", "healthBenefit": "High in potassium", "color": "Yellow", "price": 1, "currency": "USD", "type": "Fresh"},
+    {"name": "Orange", "image": "https://media.istockphoto.com/id/185284489/photo/orange.jpg?s=612x612&w=0&k=20&c=m4EXknC74i2aYWCbjxbzZ6EtRaJkdSJNtekh4m1PspE=", "healthBenefit": "Boosts immunity", "color": "Orange", "price": 3, "currency": "USD", "type": "Citrus"},
+    {"name": "Grapes", "image": "https://media.istockphoto.com/id/489520104/photo/green-grape-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=9kg_3pMeBKYnHHjx2JECF61QwzxTikLaQ2w-6A5tOO0=", "healthBenefit": "Rich in antioxidants", "color": "Purple", "price": 4, "currency": "USD", "type": "Fresh"},
+    {"name": "Watermelon", "image": "https://media.istockphoto.com/id/1142119394/photo/whole-and-slices-watermelon-fruit-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=A5XnLyeI_3mwkCNadv-QLU4jzgNux8kUPfIlDvwT0jo=", "healthBenefit": "Hydrating", "color": "Green", "price": 5, "currency": "USD", "type": "Fresh"},
+    {"name": "Mango", "image": "https://media.istockphoto.com/id/1352881713/photo/mango-fruit-with-drops-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=xNgofvhPOsksKtOMK9sbvQ2qZpMS6WQ3UC6Omv7g8-0=", "healthBenefit": "Rich in vitamins", "color": "Yellow", "price": 6, "currency": "USD", "type": "Tropical"},
+    {"name": "Strawberry", "image": "https://media.istockphoto.com/id/1157946861/photo/red-berry-strawberry-isolated.jpg?s=612x612&w=0&k=20&c=HyxZMbI_e-vDJbrzZkTz5zWCAo1mBEzWbvVlyigbi-E=", "healthBenefit": "High in antioxidants", "color": "Red", "price": 7, "currency": "USD", "type": "Berry"},
+    {"name": "Pineapple", "image": "https://media.istockphoto.com/id/1217479737/photo/pineapple-with-slices-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=KYxsZ-Bv1tEgjrOmH9qxak06iTK9S5betgteqTuDzhU=", "healthBenefit": "Aids digestion", "color": "Yellow", "price": 3, "currency": "USD", "type": "Tropical"},
+    {"name": "Kiwi", "image": "https://media.istockphoto.com/id/537403487/photo/kiwi.jpg?s=612x612&w=0&k=20&c=NC7ogHNUxPDFL3SkcTMOe1vrr6p_5p34n7saoI-jhac=", "healthBenefit": "High in Vitamin C", "color": "Green", "price": 4, "currency": "USD", "type": "Berry"},
+    {"name": "Blueberry", "image": "https://images.unsplash.com/photo-1498557850523-fd3d118b962e?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Ymx1ZWJlcnJpZXN8ZW58MHx8MHx8fDA%3D", "healthBenefit": "Good for brain health", "color": "Blue", "price": 6, "currency": "USD", "type": "Berry"}
+  ],
+  "suppliers": [
+    {"name": "Fresh Farms", "city": "New York", "since": 1995, "owner": "John Doe", "currency": "USD"},
+    {"name": "Organic Supply", "city": "Los Angeles", "since": 2005, "owner": "Alice Smith", "currency": "USD"},
+    {"name": "Green Harvest", "city": "Chicago", "since": 2010, "owner": "Robert Brown", "currency": "USD"},
+    {"name": "Tropical Fruits", "city": "Miami", "since": 2015, "owner": "Carlos Lopez", "currency": "USD"},
+    {"name": "Nature's Best", "city": "Seattle", "since": 2000, "owner": "Emily Johnson", "currency": "USD"},
+    {"name": "Healthy Picks", "city": "Austin", "since": 2012, "owner": "Mike Wilson", "currency": "USD"},
+    {"name": "Farm Fresh", "city": "Denver", "since": 1998, "owner": "Sarah Green", "currency": "USD"},
+    {"name": "Eco Produce", "city": "San Diego", "since": 2003, "owner": "Kevin White", "currency": "USD"},
+    {"name": "Harvest Delight", "city": "Boston", "since": 2018, "owner": "Laura Adams", "currency": "USD"},
+    {"name": "Fruit Kingdom", "city": "Houston", "since": 2007, "owner": "Daniel Carter", "currency": "USD"}
+  ],
+  "cities": [
+    {"cityName": "New York", "famous": "Statue of Liberty", "state": "New York", "country": "USA", "population": 8419600},
+    {"cityName": "Los Angeles", "famous": "Hollywood", "state": "California", "country": "USA", "population": 3980400},
+    {"cityName": "Chicago", "famous": "Willis Tower", "state": "Illinois", "country": "USA", "population": 2716000},
+    {"cityName": "Miami", "famous": "Beaches", "state": "Florida", "country": "USA", "population": 478251},
+    {"cityName": "Seattle", "famous": "Space Needle", "state": "Washington", "country": "USA", "population": 737015},
+    {"cityName": "Austin", "famous": "Live Music", "state": "Texas", "country": "USA", "population": 995484},
+    {"cityName": "Denver", "famous": "Rocky Mountains", "state": "Colorado", "country": "USA", "population": 716492},
+    {"cityName": "San Diego", "famous": "Beaches", "state": "California", "country": "USA", "population": 1423851},
+    {"cityName": "Boston", "famous": "Harvard University", "state": "Massachusetts", "country": "USA", "population": 684379},
+    {"cityName": "Houston", "famous": "NASA Space Center", "state": "Texas", "country": "USA", "population": 2328000}
+  ]
+}

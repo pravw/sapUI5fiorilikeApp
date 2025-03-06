@@ -1,10 +1,53 @@
 <mvc:View controllerName="oft.fiori.nov.controller.View1"
     xmlns:mvc="sap.ui.core.mvc"
     xmlns="sap.m">
-    <Page id="idView1" title="Title1">
+    <Page id="idView1"  showNavButton="true" navButtonPress="onShowMe" title="info">
+		<headerContent>
+			<Button id="idBtn" icon="sap-icon://action" tooltip="Share" />
+		</headerContent>
+
+
+
     <content>
-    <Button id="idBtnv1" text="press me" press="onShowMe"></Button>
-    
+    <!-- <Button id="idBtnv1" text="press me" press="onShowMe"></Button> -->
+    <SearchField id="idSearch" search="onSearch"></SearchField>
+ 
+     <List id="idList" items="{path: '/fruits',
+                               sorter:{
+                               path:'type',
+                               group:'true'
+                                   }
+     
+     
+     }">
+     <items>
+
+     <DisplayListItem id="idDisplay"  
+                      label="{name}" 
+                      value="{type}"></DisplayListItem>
+     <!-- <StandardListItem id="idStdlitm" icon="sap-icon://home" title="Restore lactic acid" info="banana" ></StandardListItem> -->
+     <!-- <ObjectListItem id="idObjls" title="pineapple" intro="best food for skin" icon="https://www.emilydrawing.com/wp-content/uploads/2023/04/How-To-Draw-a-Pineapple-Steps-10.jpg.webp" number="100" numberUnit="pc."></ObjectListItem>
+     <InputListItem id="idIli">
+      <HBox id="idHbx">
+      <Label id="idLbl"   text="Best for eyes"></Label>
+      <Input id="idInp"></Input>
+     </HBox>
+     </InputListItem>
+     <CustomListItem id="idCli">
+     <VBox id="idV">
+     <Label id="idLab" text="if you like select the switch"></Label>
+   <Switch id="idSwh"></Switch>
+     </VBox>
+     </CustomListItem>
+     <FeedListItem id="idFli" sender="trump" text="hi welcome"></FeedListItem>
+     <ActionListItem id="idAli"></ActionListItem> -->
+      
+
+
+
+      
+     </items>
+     </List>
     
     </content>
     </Page>
