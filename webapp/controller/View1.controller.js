@@ -10,6 +10,23 @@ sap.ui.define([
         // onInit() {
         // },
 
+        onItemPress: function(oEvent){
+
+            var listItemSelected = oEvent.getParameter("listItem");
+            //  get the address of the element which was selected
+            var sPath = listItemSelected.getBindingContextPath();
+            // get the second view object and bind this path (element abinding) with second view
+            var oview2 = this.getView().getParent().getPages()[1];
+            oview2.bindElement(sPath);
+            //  when user click on item navigate to next screen we have already used the logic in one function we juct calling that function 
+            // which inside the same function.
+             this.onShowMe();
+
+
+
+        },
+
+
         onSearch: function(oEvent){
         var searchStr = oEvent.getParameter("query");
         var oFilter = new Filter("name",FilterOperator.Contains,searchStr );
@@ -17,7 +34,6 @@ sap.ui.define([
         var oMainFilter = new Filter({
       filters: [oFilter,oFilter1],and:false
         });
-
         var aFilter = [oMainFilter];
         var oList = this.getView().byId("idList");
         oList.getBinding("items").filter(aFilter);

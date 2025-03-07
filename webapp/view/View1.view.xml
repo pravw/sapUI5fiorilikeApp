@@ -12,19 +12,25 @@
     <!-- <Button id="idBtnv1" text="press me" press="onShowMe"></Button> -->
     <SearchField id="idSearch" search="onSearch"></SearchField>
  
-     <List id="idList" items="{path: '/fruits',
+     <List  items="{path: '/fruits',
                                sorter:{
                                path:'type',
                                group:'true'
                                    }
-     
-     
-     }">
+     }"  id="idList" selectionChange="onItemPress" mode= "SingleSelectMaster">
      <items>
+      <ObjectListItem 
+       id ="idObil"
+      
+       title ="{name}"
+        
+       intro= "{type}" number="{price}" numberUnit="{unit}"
+       icon="sap-icon://product"></ObjectListItem>
 
-     <DisplayListItem id="idDisplay"  
+
+     <!-- <DisplayListItem id="idDisplay"  
                       label="{name}" 
-                      value="{type}"></DisplayListItem>
+                      value="{type}"></DisplayListItem> -->
      <!-- <StandardListItem id="idStdlitm" icon="sap-icon://home" title="Restore lactic acid" info="banana" ></StandardListItem> -->
      <!-- <ObjectListItem id="idObjls" title="pineapple" intro="best food for skin" icon="https://www.emilydrawing.com/wp-content/uploads/2023/04/How-To-Draw-a-Pineapple-Steps-10.jpg.webp" number="100" numberUnit="pc."></ObjectListItem>
      <InputListItem id="idIli">
