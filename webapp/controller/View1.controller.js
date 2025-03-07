@@ -16,7 +16,7 @@ sap.ui.define([
             //  get the address of the element which was selected
             var sPath = listItemSelected.getBindingContextPath();
             // get the second view object and bind this path (element abinding) with second view
-            var oview2 = this.getView().getParent().getPages()[1];
+            var oview2 = this.getView().getParent().getParent().getDetailPages()[0];
             oview2.bindElement(sPath);
             //  when user click on item navigate to next screen we have already used the logic in one function we juct calling that function 
             // which inside the same function.
@@ -43,9 +43,9 @@ sap.ui.define([
 
         onShowMe: function(){
             //  get object of parent for the both view:container control
-            var oApp =  this.getView().getParent();
+            var oApp =  this.getView().getParent().getParent();
             //  call the method to navigate to another view by passing id
-            oApp.to("idView2");
+            oApp.toDetail("idView2");
         }
     });
 });
