@@ -2,14 +2,20 @@ sap.ui.define([
     
     "oft/fiori/nov/controller/BaseController",
     "sap/m/MessageBox",
-    "sap/m/MessageToast"
+    "sap/m/MessageToast",
+    "oft/fiori/nov/formatter/formatter"
 
-], function(BaseController,MessageBox,MessageToast) {
+], function(BaseController,MessageBox,MessageToast,Formatter) {
     "use strict";
 
     return BaseController.extend("oft.fiori.nov.controller.View2", {
         onInit() {
         },
+
+
+
+         
+formatter: Formatter,
 
   onBack: function(){
             //  get object of parent for the both view:container control

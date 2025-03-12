@@ -1,18 +1,25 @@
-<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="oft.fiori.nov.controller.View2">
+<mvc:View xmlns:odata="sap.ui.comp.odata" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="oft.fiori.nov.controller.View2">
     <Page id="idView2" title="view2" showNavButton="true" navButtonPress="onBack">
     <content>
-    <!-- <Button id="idBtnv2" text="back" press="onBack"></Button> --><IconTabBar id="itb">
+    <!-- <Button id="idBtnv2" text="back" press="onBack"></Button> -->
+    <IconTabBar id="itb">
     <items>
     <IconTabFilter id="itf1" text="Addition Infro" key="idAI" icon="sap-icon://product"/>
     <IconTabFilter id="itf2" text="Suppliers" key="idSupp" icon="sap-icon://supplier">
         <content>
-            <Table  items="{/suppliers}" noDataText="Drop column list items here and columns in the area above" id="idSuppTAb">
+            <Table items="{/suppliers}" noDataText="Drop column list items here and columns in the area above" id="idSuppTAb">
                 <items>
                     <ColumnListItem type="Active" id="item0">
                         <cells>
                             <Text text="{name}" id="text0_1741698149754"/>
-                            <Text text="{city}" id="text1"/>
-                            <Text text="since{}" id="text2"/></cells>
+                            <Input xmlns:mvc="sap.ui.core.mvc" value="{city}" id="input0" showValueHelp="true"/>
+                            <Text text="{since}" id="text1"/>
+                            <Text text="{status}" id="text2"/>
+                            <ObjectStatus text="{status}" id="text3"
+                             state="{
+                             path:'status',
+                             formatter:'.formatter.setStatus'}"/>
+                            </cells>
                     </ColumnListItem>
                 </items>
                 <columns>
@@ -30,10 +37,33 @@
                         <header>
                             <Label text="Since When" id="label2"/>
                         </header>
+                    </Column>
+                    <Column id="column0_1741758925555">
+                        <header>
+                            <Text text="Status" id="text5"/>
+                        </header>
                     </Column></columns></Table>
         </content>
     </IconTabFilter>
-    <IconTabFilter id="itf3" text="Select City" key="idCity" icon="sap-icon://home"/>
+    <IconTabFilter id="itf3" text="Select City" key="idCity" icon="sap-icon://home">
+        <content>
+            <Select id="idCity1" items="{/cities}" selectedKey="item1">
+                <items>
+                    <core:ListItem xmlns:core="sap.ui.core" key="{cityName}" text="{cityName}" id="it20"/>
+                  
+                    </items>
+                
+            </Select>
+
+             <ComboBox id="idCity2" items="{/cities}" selectedKey="item12">
+                <items>
+                    <core:ListItem xmlns:core="sap.ui.core" key="{cityName}" text="{cityName}" id="it201"/>
+                  
+                    </items>
+                
+            </ComboBox>
+        </content>
+    </IconTabFilter>
     </items>
     <content>
         <sap.ui.layout.form:SimpleForm xmlns:sap.ui.layout.form="sap.ui.layout.form" xmlns:sap.ui.core="sap.ui.core" editable="true" layout="ResponsiveGridLayout" id="form0">

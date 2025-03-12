@@ -12,16 +12,16 @@
     {"name": "Blueberry", "image": "https://images.unsplash.com/photo-1498557850523-fd3d118b962e?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Ymx1ZWJlcnJpZXN8ZW58MHx8MHx8fDA%3D", "healthBenefit": "Good for brain health", "color": "Blue", "price": 6, "currency": "USD", "type": "Berry"}
   ],
   "suppliers": [
-    {"name": "Fresh Farms", "city": "New York", "since": 1995, "owner": "John Doe", "currency": "USD"},
-    {"name": "Organic Supply", "city": "Los Angeles", "since": 2005, "owner": "Alice Smith", "currency": "USD"},
-    {"name": "Green Harvest", "city": "Chicago", "since": 2010, "owner": "Robert Brown", "currency": "USD"},
-    {"name": "Tropical Fruits", "city": "Miami", "since": 2015, "owner": "Carlos Lopez", "currency": "USD"},
-    {"name": "Nature's Best", "city": "Seattle", "since": 2000, "owner": "Emily Johnson", "currency": "USD"},
-    {"name": "Healthy Picks", "city": "Austin", "since": 2012, "owner": "Mike Wilson", "currency": "USD"},
-    {"name": "Farm Fresh", "city": "Denver", "since": 1998, "owner": "Sarah Green", "currency": "USD"},
-    {"name": "Eco Produce", "city": "San Diego", "since": 2003, "owner": "Kevin White", "currency": "USD"},
-    {"name": "Harvest Delight", "city": "Boston", "since": 2018, "owner": "Laura Adams", "currency": "USD"},
-    {"name": "Fruit Kingdom", "city": "Houston", "since": 2007, "owner": "Daniel Carter", "currency": "USD"}
+    {"name": "Fresh Farms", "city": "New York", "since": 1995, "owner": "John Doe", "currency": "USD","status":"out of Market"},
+    {"name": "Organic Supply", "city": "Los Angeles", "since": 2005, "owner": "Alice Smith", "currency": "USD","status":"out of Market"},
+    {"name": "Green Harvest", "city": "Chicago", "since": 2010, "owner": "Robert Brown", "currency": "USD","status":"Registered"},
+    {"name": "Tropical Fruits", "city": "Miami", "since": 2015, "owner": "Carlos Lopez", "currency": "USD","status":"out of Market"},
+    {"name": "Nature's Best", "city": "Seattle", "since": 2000, "owner": "Emily Johnson", "currency": "USD","status":"out of Market"},
+    {"name": "Healthy Picks", "city": "Austin", "since": 2012, "owner": "Mike Wilson", "currency": "USD","status":"Not Registered"},
+    {"name": "Farm Fresh", "city": "Denver", "since": 1998, "owner": "Sarah Green", "currency": "USD","status":"out of Market"},
+    {"name": "Eco Produce", "city": "San Diego", "since": 2003, "owner": "Kevin White", "currency": "USD","status":"out of Market"},
+    {"name": "Harvest Delight", "city": "Boston", "since": 2018, "owner": "Laura Adams", "currency": "USD","status":"Registered"},
+    {"name": "Fruit Kingdom", "city": "Houston", "since": 2007, "owner": "Daniel Carter", "currency": "USD","status":"Not Registered"}
   ],
   "cities": [
     {"cityName": "New York", "famous": "Statue of Liberty", "state": "New York", "country": "USA", "population": 8419600},
