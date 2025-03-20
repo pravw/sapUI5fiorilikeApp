@@ -26,40 +26,33 @@
 <script>
  sap.ui.getCore().attachInit(function () {
 
+    var ComponentContainer = new sap.ui.core.ComponentContainer({
+     name:  "oft.fiori.nov"
 
-// var oPraveen = new sap.ui.view({
-//     id:"idMyXml",
-//      viewName:  "oft.fiori.nov.view.App",
-//      type:"XML"
-
-// });
+    });
 
 
+    ComponentContainer.placeAt("content");
 
-var oPraveen = new sap.ui.view("idMyXml",{
-     viewName:"oft.fiori.nov.view.App",
-     type:sap.ui.core.mvc.ViewType.XML
-});
-
-
-var oView1 = new sap.ui.view("idView1",{
-viewName:"oft.fiori.nov.view.View1",
-type:sap.ui.core.mvc.ViewType.XML
-
-});
-
-var oView2 = new sap.ui.view("idView2",{
-viewName:"oft.fiori.nov.view.View2",
-type:sap.ui.core.mvc.ViewType.XML
-
-});
-
-var oApp = oPraveen.byId("idApp");
-oApp.addMasterPage(oView1).addDetailPage(oView2);
-oPraveen.placeAt("content");
 
 }); 
 </script>
+
+
+<!-- <script>
+    sap.ui.getCore().attachInit(function () {
+      sap.ui.require(["sap/ui/core/Component", "sap/ui/core/ComponentContainer"], function (Component, ComponentContainer) {
+        Component.create({
+          name: "oft.fiori.nov"
+        }).then(function (oComponent) {
+          // Create a component container to hold the component
+          new ComponentContainer({
+            component: oComponent
+          }).placeAt("content");
+        });
+      });
+    });
+  </script> -->
 
 
 </head>

@@ -5,7 +5,7 @@
         "type": "application",
         "i18n": "i18n/i18n.properties",
         "applicationVersion": {
-            "version": "0.0.1"
+             "version": "0.0.1"
         },
         "title": "{{appTitle}}",
         "description": "{{appDescription}}",
@@ -70,7 +70,7 @@
                 "viewType": "XML",
                 "path": "listcontrol.view",
                 "async": true,
-                "viewPath": "listcontrol.view"
+                "viewPath": "oft.fiori.nov.view"
             },
             "routes": [
                 {
@@ -89,7 +89,7 @@
             }
         },
         "rootView": {
-            "viewName": "listcontrol.view.App",
+            "viewName": "oft.fiori.nov.view.App",
             "type": "XML",
             "id": "App"
         }
