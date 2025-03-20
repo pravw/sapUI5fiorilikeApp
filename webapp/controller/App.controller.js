@@ -6,7 +6,7 @@ sap.ui.define([
 
   return Controller.extend("oft.fiori.nov.controller.App", {
       onInit: function() {
-       this.initiateModels();
+      //  this.initiateModels();
       }
   });
 });
