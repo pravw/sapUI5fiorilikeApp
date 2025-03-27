@@ -9,12 +9,26 @@ sap.ui.define([
     "use strict";
 
     return BaseController.extend("oft.fiori.nov.controller.View2", {
-        // onInit() {
-        // },
+        onInit: function() {
+            this.oRouter = this.getOwnerComponent().getRouter();
+            this.oRouter.attachRoutePatternMatched(this.herculis,this);
+        },
+        herculis: function(oEvent){
+            // debugger;
+
+            // while select the back button it will take to back selected stage
+            //   get me the route of index which item was selected
+            var selectedIndex = oEvent.getParameter("arguments").jump;
+           
+           // get the path
+             var sPath = "/fruits/"+selectedIndex;
+
+             // bind element
+             this.getView().bindElements(sPath);
+               
+        },
 
 
-
-         
 formatter: Formatter,
 
   onBack: function(){

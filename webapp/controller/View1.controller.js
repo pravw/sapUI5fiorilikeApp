@@ -8,20 +8,47 @@ sap.ui.define([
 
     return BaseController.extend("oft.fiori.nov.controller.View1", {
         onInit() {
+
+            // this.oRouter =  sap.ui.core.UIComponent.grtROuterFor(this);
+            this.oRouter = this.getOwnerComponent().getRouter();
             
         },
 
         onItemPress: function(oEvent){
 
+        //    load the detailviewbyfiring routes as a result onthe top in uri
+            // this.oRouter.navTo("simposon",{
+
+                
+
+            // });
+
             var listItemSelected = oEvent.getParameter("listItem");
             //  get the address of the element which was selected
             var sPath = listItemSelected.getBindingContextPath();
             // get the second view object and bind this path (element abinding) with second view
-            var oview2 = this.getView().getParent().getParent().getDetailPages()[0];
-            oview2.bindElement(sPath);
-            //  when user click on item navigate to next screen we have already used the logic in one function we juct calling that function 
-            // which inside the same function.
-             this.onShowMe();
+
+            this.oRouter.navTo("simposon",{
+
+                jump: sPath.split("/")[sPath.split("/").length -1]
+
+            });
+           
+           
+           
+           
+           
+           
+           
+            // var oview2 = this.getView().getParent().getParent().getDetailPages()[0];
+            // oview2.bindElement(sPath);
+            // //  when user click on item navigate to next screen we have already used the logic in one function we juct calling that function 
+            // // which inside the same function.
+            
+            
+            // // this.onShowMe();
+
+
 
 
 

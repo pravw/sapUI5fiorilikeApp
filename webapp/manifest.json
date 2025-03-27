@@ -1,7 +1,7 @@
 {
     "_version": "1.65.0",
     "sap.app": {
-        "id": "listcontrol",
+        "id": "oft.fiori.nov",
         "type": "application",
         "i18n": "i18n/i18n.properties",
         "applicationVersion": {
@@ -46,8 +46,14 @@
             "cozy": true
         },
         "models": {
+            "": {
+                "type":"sap.ui.model.json.JSONModel",
+                "uri":"model/mockData/fruits.json"
+            },
             "i18n": {
                 "type": "sap.ui.model.resource.ResourceModel",
+                "uri":"i18n/i18n.properties",
+
                 "settings": {
                     "bundleName": "listcontrol.i18n.i18n"
                 }
@@ -64,34 +70,44 @@
             "config": {
                 "routerClass": "sap.m.routing.Router",
                 "controlAggregation": "pages",
-                "controlId": "app",
+                "controlId": "idApp",
                 "transition": "slide",
                 "type": "View",
                 "viewType": "XML",
-                "path": "listcontrol.view",
+                "path": "oft.fiori.nov.view",
                 "async": true,
                 "viewPath": "oft.fiori.nov.view"
             },
             "routes": [
                 {
-                    "name": "RouteView1",
-                    "pattern": ":?query:",
-                    "target": [
-                        "TargetView1"
-                    ]
+                    "name": "herry",
+                    "pattern": "",
+                    "target": ["donald"]
+                },
+                {
+                    "name": "simposon",
+                    "pattern": "fruits/{jump}",
+                    "target": ["trumph"]
                 }
             ],
             "targets": {
-                "TargetView1": {
-                    "id": "View1",
-                    "name": "View1"
+                "donald": {
+                    "id": "idView1",
+                    "name": "View1",
+                    "controlAggregation": "masterPages"
+                     
+                },
+                "trumph": {
+                    "id": "idView2",
+                    "name": "View2",
+                     "controlAggregation": "detailPages"
                 }
             }
         },
         "rootView": {
             "viewName": "oft.fiori.nov.view.App",
             "type": "XML",
-            "id": "App"
+            "id": "idApp"
         }
     }
 }
